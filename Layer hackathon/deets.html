@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="deets.css">
+</head>
+<body>
+    <form id="detailsForm" action="#" method="post">
+        <h1>Enter your details</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="12" required>
+        <br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        <br>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+        <br>
+        <br>
+        <label for="medical">Medical Issues:</label>
+        <br>
+        <br>
+        <label for="allergy">Do you have any allergies?</label>
+        <select id="allergy" name="allergy" onchange="toggleAllergySpecify(this)">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+        </select>
+        <div id="allergySpecify" class="allergy-div">
+            <label>If yes,Specify Allergies:</label>
+            <textarea id="allergyText" name="allergyText"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="pregnant" name="pregnant">
+            <label for="pregnant">Pregnant</label>
+        </div>
+        <div>
+            <input type="checkbox" id="diabetic" name="diabetic">
+            <label for="diabetic">Diabetic</label>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        // JavaScript code to handle form submission and redirect
+        document.getElementById('detailsForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Redirect to the desired page
+            window.location.href = 'options.html'; // Replace 'new-page.html' with the URL of the destination page
+        });
+    </script>
+</body>
+</html>

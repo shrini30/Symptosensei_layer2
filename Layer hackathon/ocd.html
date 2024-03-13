@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <link rel="stylesheet" href="ocd.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">OCD Test</h1>
+        <div class="question">
+            <p>How often do you experience intrusive, unwanted thoughts or obsessions?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q1">
+        </div>
+        <div class="question">
+            <p>How would you rate your level of distress or anxiety caused by these obsessive thoughts?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q2">
+        </div>
+        <div class="question">
+            <p>How often do you engage in repetitive behaviors or rituals to alleviate anxiety or prevent harm? </p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q3">
+        </div>
+        <div class="question">
+            <p>How would you rate your ability to resist or control these compulsive behaviors? </p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q4">
+        </div>
+        <div class="question">
+            <p>How often do these obsessions and compulsions interfere with your daily activities or responsibilities?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q5">
+        </div>
+        <div class="button-container">
+            <button id="submitBtn">Submit</button>
+            <button id="solutionBtn">Solutions</button>
+        </div>
+        <p id="result"></p>
+        <div id="totalMarks"></div>
+    </div>
+    <script src="ocd.js"></script>
+</body>
+</html>

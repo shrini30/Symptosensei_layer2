@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <link rel="stylesheet" href="bipolar.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Bipolar Test</h1>
+        <div class="question">
+            <p>Have you experienced episodes of unusually elevated mood, increased energy, or euphoria?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q1">
+        </div>
+        <div class="question">
+            <p>How would you rate your level of irritability or agitation during these elevated mood episodes?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q2">
+        </div>
+        <div class="question">
+            <p>Have you engaged in impulsive or risky behaviors during manic episodes, such as overspending, reckless driving, or substance abuse?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q3">
+        </div>
+        <div class="question">
+            <p>How would you rate your ability to cope with stress or difficult situations?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q4">
+        </div>
+        <div class="question">
+            <p>How would you rate your ability to function in daily activities during depressive episodes?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q5">
+        </div>
+        <div class="button-container">
+            <button id="submitBtn">Submit</button>
+            <button id="solutionBtn">Solutions</button>
+        </div>
+        <p id="result"></p>
+        <div id="totalMarks"></div>
+    </div>
+    <script src="bipolar.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    background-image: url('options.png');
+    background-color: #ffffff;
+    background-size: cover; /* Make the background image cover the entire viewport */
+    background-repeat: no-repeat; /* Ensure the background image does not repeat */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow */
+}
+
+.container {
+    display: flex;
+    margin-bottom: 20px; /* Add margin to separate buttons from the bottom */
+}
+
+.button {
+    width: 16em; /* Button width */
+    height: 7em; /* Button height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 2.5em; 
+    margin-top: 400px;/* Margin between buttons and move them up */
+    border: inset #000; /* Remove border */
+    border-radius: 20px; /* Make buttons rectangular with rounded ends */
+    background-color: #83f083; /* Light green button color */
+    color: #000000; /* Text color */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.button:hover {
+    background-color: #ffffff; /* Change button color to white on hover */
+}
+
+#mentalHealth {
+    animation: pulse 1s infinite alternate; /* Add pulsating animation */
+}
+
+#physicalHealth {
+    animation: pulse 1s infinite alternate; /* Add pulsating animation */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+

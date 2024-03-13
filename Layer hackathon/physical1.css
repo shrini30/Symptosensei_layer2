@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('sssssssssssssssssssssssssssssssssssss.png');
+    background-color: #f0f0f0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    margin-top: 260px;
+}
+
+.button {
+    width: 10em;
+    height: 3.5em;
+    background-color: #6ae292; 
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background-color: #5ae75a; 
+    transform: scale(1.05); 
+}
+
+.button:focus {
+    outline: none; 
+}
+
+.emergency-button {
+    width: 12em;
+    height: 5em;
+    background-color: #ff0000; 
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    margin: 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    animation: blinker 1s linear infinite; /* Add blinking animation */
+}
+
+@keyframes blinker {
+    20% {
+        opacity: 0;
+    }
+}
+
+.emergency-button:hover {
+    background-color: #ff3333; /* Darker red on hover */
+}
+
+.emergency-button:focus {
+    outline: navajowhite; 
+}

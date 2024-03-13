@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <link rel="stylesheet" href="depression.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Depression Test</h1>
+        <div class="question">
+            <p>On a scale of 0 to 10, how often do you feel sad or downhearted?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q1">
+        </div>
+        <div class="question">
+            <p>How often do you have trouble sleeping or experience changes in your appetite or changes in your eating habits?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q2">
+        </div>
+        <div class="question">
+            <p>How often do you feel guilty, worthless, or excessively self-critical?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q3">
+        </div>
+        <div class="question">
+            <p>How would you rate your ability to cope with stress or difficult situations?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q4">
+        </div>
+        <div class="question">
+            <p>How often do you have thoughts of death or suicide?</p>
+            <input type="range" min="0" max="10" value="5" class="slider" id="q5">
+        </div>
+        <div class="button-container">
+            <button id="submitBtn">Submit</button>
+            <button id="solutionBtn">Solutions</button>
+        </div>
+        <p id="result"></p>
+        <div id="totalMarks"></div>
+    </div>
+    <script src="depression.js"></script>
+</body>
+</html>

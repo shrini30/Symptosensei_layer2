@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(SymptoSensei\ s1.png); /* Replace 'your-image-url.jpg' with your background image */
+    background-size: 100%;
+    background-position: center;
+    overflow-y: hidden;
+}
+
+.title {
+    font-size: 5rem;
+    color: #ffffff; 
+    font-family: 'Lato';
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #ffffff; /* Adjust color as needed */
+    text-align: center;
+    margin-top: 20px;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+}
+
+.start-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50; /* Green color, you can change it */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulse 1s infinite alternate; /* Adding pulsating animation */
+    margin-top: 300px; 
+    margin-left: 500px;/* Add two lines of space (adjust as needed) */
+    text-decoration: none; /* Remove default underline */
+}
+
+.start-btn:hover {
+    background-color: #45a049; /* Darker green color on hover */
+
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

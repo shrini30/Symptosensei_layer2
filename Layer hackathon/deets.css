@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#101B15;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #034211;
+    border-radius: 5px;
+    background-color: #1d3f2e;
+}
+
+h1 {
+    text-align: center;
+    color: #abecae;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #abecae;
+    color: #000000;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+.allergy-div {
+    display: none;
+}
+
+.allergy-div label {
+    display: block;
+    color: #000000;
+}
+
+.allergy-div textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#pregnant,
+#diabetic {
+    margin-top: 10px;
+}
+
+#pregnant,
+#diabetic,
+#pregnant + label,
+#diabetic + label {
+    color: #ffffff;
+}
